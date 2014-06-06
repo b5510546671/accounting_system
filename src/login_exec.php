@@ -59,6 +59,11 @@
             exit();
         }
         else{
+            echo "<scrip>alert('Wrong username or password')</script>";
+            $_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+            session_write_close();
+            header("location: index.php");
+            
             
         }
     }

@@ -1,24 +1,29 @@
 <?php
 	require_once('auth.php');
+    loginsuccess($_SESSION['SESS_USERNAME']);
+
+    function loginsuccess($name){
+        echo "<h3>Login Success</h3>";
+        echo "<h4>Welcome $name</h4>";
+        echo "<hr>";
+        echo "<br>";
+        echo "<a href=.../addProductForm.php> Add new Products form</a>";
+        echo "<br>";
+        echo "<a href=.../editProductForm.php> Edit Products form</a>";
+        echo "<br>";
+        echo "<a href=index.php> Log Out </a>";
+    }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<style type="text/css">
-<!--
-.style1 {
-	font-size: 36px;
-	font-weight: bold;
-}
--->
-</style>
-</head>
- 
-<body>
-<p align="center" class="style1">Login successfully </p>
-<p align="center">This page is the home, you can put some stuff here......</p>
-<p align="center"><a href="index.php">logout</a></p>
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
